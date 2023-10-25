@@ -292,6 +292,23 @@ body{
         display: inline-block;
     }
 }
+.up{
+    position: fixed;
+    right: -40px;
+    bottom: 30px;
+    padding: 10px;
+    color: white;
+    background-color: var(--main-color);
+    z-index: 1000000;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+.up.show{
+    right: 30px;
+}
 /* end landing page */
 /* start about us */
 .about-us{

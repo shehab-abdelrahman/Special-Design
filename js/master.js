@@ -400,3 +400,20 @@ theLinks.onclick = function(e){
     e.stopPropagation();
 
 }
+
+let upbtn = document.querySelector(".up");
+
+window.onscroll = function () {
+    if(this.scrollY >= 935){
+        upbtn.classList.add("show");
+    }else{
+        upbtn.classList.remove("show")
+    }
+}
+
+upbtn.addEventListener("click", e =>{
+    window.scrollTo({
+        top:0,
+        behavior:"smooth",
+    })
+})
